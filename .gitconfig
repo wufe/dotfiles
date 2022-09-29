@@ -1,0 +1,6 @@
+[alias]
+	cs = commit -S
+	irebase = rebase --interactive
+	purge = !git fetch --all --prune && git gc && git prune
+	gone = "!git branch -vv | grep ': gone]'"
+	local = "!git branch -vv | grep -v 'origin/'"
