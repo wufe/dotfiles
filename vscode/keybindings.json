@@ -1,0 +1,35 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "ctrl+alt+w",
+        "command": "workbench.action.switchWindow"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.action.reloadWindow"
+    },
+    {
+        "key": "alt+q",
+        "command": "editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "ctrl+shift+alt+t",
+        "command": "workbench.action.tasks.reRunTask"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    }
+]
