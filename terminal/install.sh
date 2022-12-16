@@ -16,7 +16,7 @@ echo 'alias cdown="cubbit-tilt down"' >> ~/.bashrc
 
 echo 'alias cubbit="cd ~/cubbit"' >> ~/.zshrc
 echo 'alias cubbit-tilt="cubbit && tilt -f coordinator/Tiltfile"' >> ~/.zshrc
-echo 'alias cup="cubbit-tilt up"' >> ~/.zshrc
+echo 'alias cup="cubbit-tilt up --host 0.0.0.0 --legacy"' >> ~/.zshrc
 echo 'alias cdown="cubbit-tilt down"' >> ~/.zshrc
 echo 'alias k="kubectl"' >> ~/.zshrc
 echo 'alias build-protos="cubbit && yarn workspace @cubbit/protos make"' >> ~/.zshrc
@@ -28,6 +28,8 @@ echo 'alias build-toggles="cubbit && yarn workspace @cubbit/toggles make"' >> ~/
 echo 'alias build-core="cubbit && yarn workspace @cubbit/core compile"' >> ~/.zshrc
 echo 'alias build-redux-with-status="cubbit && yarn workspace @cubbit/redux-with-status compile"' >> ~/.zshrc
 echo 'alias build-web-deps="build-protos && build-ctypings && build-controllers && build-visual-element && build-utils && build-toggles && build-redux-with-status"' >> ~/.zshrc
+echo 'alias build-test-utils="yarn workspace @cubbit/test-utils compile"' >> ~/.zshrc
+echo 'alias build-claw-deps="build-test-utils && build-web-deps"' >> ~/.zshrc
 
 source ~/.bashrc
 
